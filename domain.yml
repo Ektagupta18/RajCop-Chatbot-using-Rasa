@@ -1,0 +1,106 @@
+# domain file is the directory of everything your assistant knows
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - arrested_persons
+  - missing_persons
+  - unidentified_dead_bodies
+  - contact_info
+  - updated_criminal_laws
+  - cybersecurity_safety_tip
+  - emergency_contacts
+  - file_fir
+  - fir_enquiry
+  - foreigners_safety_tip
+  - telecommunication_branch
+
+
+entities:
+  - person_name
+  - date
+  - location
+  - crime_type
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: "Hello there!"
+    - text: "Hey, how can I help you today?"
+    - text: "Hi, how can I assist you today?"
+    - text: "Namaste! How can I help you today?"
+    - text: "Hello there :)"
+
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot."
+
+  utter_arrested_persons:
+    - text: "You can get information about arrested persons here: (https://police.rajasthan.gov.in/portal/ArrestPerson)"
+
+  utter_missing_persons:
+    - text: "You can find information about missing persons here: (https://police.rajasthan.gov.in/portal/MissingPerson)"
+
+  utter_unidentified_dead_bodies:
+    - text: "Details about unidentified dead bodies can be found here: (https://police.rajasthan.gov.in/portal/UnidentifiedDeadBody)"
+
+  utter_contact_info:
+    - text: "You can contact us at: (https://police.rajasthan.gov.in/portal/Directory)"
+
+  utter_updated_criminal_laws:
+    - text: "You can find the updated criminal laws here: (https://police.rajasthan.gov.in/portal/NewCriminalLaw)"
+
+  utter_cybersecurity_safety_tip:
+    - text: "Here is a cybersecurity safety tip: (https://police.rajasthan.gov.in/uploads/Cyber_Security_75727d28fe.pdf)"
+
+  utter_emergency_contacts:
+    - text: "Here are the emergency contacts: 
+      - Nirbhaya WhatsApp Helpline: [8764866090, 8764866091, 8764866092,8764866093, 8764866094]
+      - Ambulance: 102/112
+      - Anti Corruption Bureau: [1064/ 9413502834]
+      - Fire Brigade: 101/112
+      - Child Helpline: [1098]
+      - Police Control Room: 112
+      - Sampark 181 Helpline: 181
+      - Cyber Crime Helpline: 1930
+      - Tele Manas Helpline: 18008914416/ 14416
+      - SC/ST Help: 18001806025/ 18002021989/ 14566
+      - Traffic Police: 1095
+      - Garima Helpline (Women & Senior Citizens): 112
+      - women's safety: 1090
+      "
+  utter_file_fir:
+    - text: "You can file an FIR online here: (https://police.rajasthan.gov.in/citizen/login.htm?lang=hi_IN&stov=355C-0XSJ-T9BA-9L0C-KH9K-ABPP-FYAA-7CFP)"
+    
+
+  utter_fir_enquiry:
+    - text: "You can check the status of your report by downloading the RajCop Citizen App through this link: (https://play.google.com/store/apps/details?id=com.datainfosys.rajasthanpolice.publicapp) "
+
+  utter_foreigners_safety_tip:
+    - text: "Here are the safety tips for foreigners: (https://police.rajasthan.gov.in/uploads/Foreigners_Tips_1205a9b6ae.pdf)"
+
+  utter_telecommunication_branch:
+    - text: "You can get information about the telecommunication branch here: (https://police.rajasthan.gov.in/portal/PoliceTelecommunicationBranch)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
