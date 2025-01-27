@@ -1,0 +1,354 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - good afternoon
+    - greetings
+    - howdy
+    - yo
+    - what's up?
+    - hey there
+    - hi there
+    - namaste
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - take care
+    - see you
+    - adios
+    - bye bye
+    - farewell
+    - have a nice day
+    - see you around
+    - good night
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - correct
+    - that's right
+    - of course
+    - absolutely
+    - sure
+    - yeah
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - nope
+    - not at all
+    - I don't think so
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - I am feeling amazing
+    - wonderful
+    - super happy
+    - I am great
+    - I am doing awesome
+    - so good
+    - perfect
+    - fantastic
+    - amazing
+    - I am on top of the world
+
+- intent: mood_unhappy
+  examples: |
+    - I am feeling sad
+    - I am not doing well
+    - I feel horrible
+    - not good
+    - unhappy
+    - disappointed
+    - very sad
+    - extremely sad
+    - super sad
+    - my day was horrible
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - am I speaking to a human or a bot?
+    - are you a human?
+    - am I talking to a machine?
+    - are you a real person?
+
+- intent: arrested_persons
+  examples: |
+    - Who is under arrest right now?
+    - Provide information on the people who were taken into custody.
+    - Can I get information about those arrested?
+    - arrested persons list
+    - Show me the names of the people who have been arrested.
+    - Who are the arrested persons?
+    - Give me details about people who have been arrested.
+    - Who are the recently arrested individuals?
+    - Tell me about the people who were arrested.
+    - Can you provide a list of arrested persons?
+    - Who has been arrested?
+    - show the arrested persons
+    - arrested persons
+
+- intent: missing_persons
+  examples: |
+    - Show me missing persons
+    - Who is missing?
+    - Provide details of missing persons
+    - Who are the individuals that are missing?
+    - Provide details about the reported missing persons.
+    - Can I get updates on missing individuals?
+    - Who are the people currently missing?
+    - Show me the list of missing people.
+    - Give me information on missing persons.
+    - Who has been reported missing recently?
+    - missing persons
+
+- intent: unidentified_dead_bodies
+  examples: |
+    - Show me unidentified dead bodies
+    - Provide details of unidentified dead bodies
+    - Any information on unidentified dead bodies?
+    - Who are the deceased individuals that remain unidentified?
+    - Can I get updates on unidentified dead bodies?
+    - Provide details on bodies that are not yet identified.
+    - Who are the people whose bodies haven't been identified?
+    - Give me information about unidentified dead bodies.
+    - Are there any unidentified dead bodies?
+    - Tell me about the dead bodies that are unidentified.
+    - unidentified dead bodies
+
+- intent: contact_info
+  examples: |
+    - contact information of the Rajasthan Police headquarter
+    - contact information
+    - contact details
+    - contact info
+    - contact of the police headquarter
+    - how to contact the police department
+    - how to contact the police headquarter
+    - what is the contact for police department
+    - I need the contact number for the local police station.
+    - Where can I find the contact info for the police?
+    - how do i get in touch with the police headquarters?
+    - i need the contact information for the police department
+    - How can I contact the rajasthan police?
+
+- intent: updated_criminal_laws
+  examples: |
+    - updated criminal laws
+    - new criminal laws
+    - criminal laws
+    - updated laws
+    - new laws
+    - The updated criminal laws by the National Crime Records Bureau.
+    - The new criminal laws by the NCRB
+    - The updated criminal laws by the NCRB
+    - The new criminal laws by the National Crime Records Bureau
+
+- intent: cybersecurity_safety_tip
+  examples: |
+    - cyber security safety tip
+    - cybersecurity safety tips
+    - cyber safety tips
+    - What are the safety tips for cyber security
+    - How can I stay safe online?
+    - How can I protect myself from cyber threats?
+    - How can I keep my data safe
+    - How can I protect my information online?
+    - How can I stay safe on the internet?
+    - How can I protect my privacy online?
+    - How can I keep my data secure?
+    - How can I protect my information from hackers?
+    - How can I keep my information safe online?
+    - How can I protect my data from cyber attacks?
+    - How can I keep my information secure online?
+    - How can I protect my data from being stolen?
+    - How can I keep my information private online?
+    - How can I protect my data from being hacked?
+    - How can I keep my information safe from cyber criminals?
+    - How can I protect my data from being compromised?
+
+- intent: emergency_contacts
+  examples: |
+    - emergency contacts
+    - emergency contact numbers
+    - emergency numbers
+    - emergency helpline
+    - emergency contact information
+    - emergency contact details
+    - emergency contact numbers in Rajasthan
+    - I am in emergency, I need help
+    - Show me all emergency contacts
+    - List the emergency helpline numbers
+    - I need the emergency numbers
+    - What are the emergency contacts?
+    - I need help
+    - I am in trouble
+    - I need urgent help
+    - I need immediate assistance
+    - I am in danger
+    - Help me now
+    - I need help right away
+    - This is an emergency
+    - Please send help
+    - I need emergency assistance
+    - I am in a critical situation
+    - I need urgent support
+    - I need immediate help
+    - I need emergency support
+    - I need help immediately
+    - I need help urgently
+    - I need help now
+    - I need help as soon as possible
+    - I need help right now
+    - I need help quickly
+    - I need help fast
+    - I need help immediately
+    - I need help urgently
+   
+- intent: file_fir
+  examples: |
+   - I want to file an FIR
+   - How can I file an FIR?
+   - I need to file a First Information Report
+   - How do I file an FIR?
+   - I want to report a crime
+   - How can I report a crime?
+   - I need to report an incident
+   - How do I report an incident?
+   - I want to file a complaint
+   - How can I file a complaint?
+   - I need to file a police report
+   - How do I file a police report?
+   - I want to lodge a complaint
+   - How can I lodge a complaint?
+   - I need to lodge a police report
+   - How do I lodge a police report?
+   - I want to register a complaint
+   - How can I register a complaint?
+   - Can I lodge an FIR from my phone?
+   - Where do I file an FIR for fraud?
+   - I need to report a theft
+   - Where can I submit an FIR?
+   - Can you help me report a crime?
+   - File a police report
+   - I need to file an online FIR
+   - What's the process to file an FIR?
+   - I need assistance to file an FIR
+   - Guide me to file an FIR
+   - File an FIR for [theft](crime_type)
+   - File an FIR in [Jaipur](location)
+   - I want to file a police report
+   - How can I file a police report?
+   - I need to file a police report
+   - How do I file a police report?
+   - I want to report an incident
+   - How can I report an incident?
+   - I need to report an incident
+   - How do I report an incident?
+   - I want to file a complaint
+   - How can I file a complaint?
+   - I need to file a complaint
+   - How do I file a complaint?
+   - I want to lodge a complaint
+   - How can I lodge a complaint?
+   - I need to lodge a complaint
+   - How do I lodge a complaint?
+   - I want to register a complaint
+   - How can I register a complaint?
+   - I need to register a complaint
+   - How do I register a complaint?
+   - Can I file a police report online?
+   - Where do I file a police report?
+   - I need to report a crime
+   - Can you help me report a crime?
+   - File a police report
+   - I need to file an online police report
+   - What's the process to file a police report?
+   - I need assistance to file a police report
+   - Guide me to file a police report
+   - File a police report for [theft](crime_type)
+   - File a police report in [Jaipur](location)
+  
+
+- intent: fir_enquiry
+  examples: |
+    - I want to enquire about an FIR
+    - How can I check the status of an FIR?
+    - I need to know the status of an FIR
+    - How do I enquire about an FIR?
+    - I want to know the progress of an FIR
+    - How can I track an FIR?
+    - I need to check the status of an FIR
+    - How do I check the progress of an FIR?
+    - I want to enquire about a police report
+    - How can I check the status of a police report?
+    - I need to know the status of a police report
+    - How do I enquire about a police report?
+    - I want to know the progress of a police report
+    - How can I track a police report?
+    - I need to check the status of a police report
+    - How do I check the progress of a police report?
+    - I want to enquire about a complaint
+    - How can I check the status of a complaint?
+    - I need to know the status of a complaint
+    - How do I enquire about a complaint?
+    - tell me about fir status
+    - Can I track my FIR online?
+    - How can I check the status of my FIR?
+    - I want to know the status of my FIR
+    - How do I enquire about my FIR?
+    - I want to know the progress of my FIR
+    - How can I track my FIR?
+    - I need to check the status of my FIR
+    - How do I check the progress of my FIR?
+    - I want to enquire about my police report
+    - How can I check the status of my police report?
+    - I need to know the status of my police report
+    - How do I enquire about my police report?
+    - I want to know the progress of my police report
+    - How can I track my police report?
+    - I need to check the status of my police report
+
+- intent: foreigners_safety_tip
+  examples:  |
+    - safety tips for foreigners
+    - what are the safety tips for foreigners
+    - how can foreigners stay safe in Rajasthan
+    - how can foreigners stay safe in India
+    
+- intent: telecommunication_branch
+  examples:  |
+    - Who manages the telecommunication branch?
+    - What is the purpose of the telecommunication branch?
+    - What services are offered by the telecommunication branch?
+    - How does the telecommunication branch operate?
+    - Provide details on the telecommunication branch.
+    - What is the role of the telecommunication branch in the police department?
+    - What does the telecommunication branch do?
+    - Tell me about the telecommunication branch.
+    - What is the telecommunication branch?
+    - tell me something about telecommunication branch of the police headquarter
+    - telecommunication branch
+    - telecommunication branch of the police department
+    - telecommunication branch of the police headquarter
+    - telecommunication branch of the police
+    
+
+
+
+    

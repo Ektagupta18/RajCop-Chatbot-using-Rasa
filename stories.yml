@@ -1,0 +1,86 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: show arrested persons
+  steps:
+  - intent: arrested_persons
+  - action: utter_arrested_persons
+
+- story: show missing persons
+  steps:
+  - intent: missing_persons
+  - action: utter_missing_persons
+
+- story: show unidentified dead bodies
+  steps:
+  - intent: unidentified_dead_bodies
+  - action: utter_unidentified_dead_bodies
+
+- story: show contact info
+  steps:
+  - intent: contact_info
+  - action: utter_contact_info
+
+- story: show new criminal laws
+  steps:
+  - intent: updated_criminal_laws
+  - action: utter_updated_criminal_laws
+
+- story: show cyber security safety tips
+  steps:
+  - intent: cybersecurity_safety_tip
+  - action: utter_cybersecurity_safety_tip
+
+- story: show emergency contacts
+  steps:
+  - intent: emergency_contacts
+  - action: utter_emergency_contacts
+
+- story: show how to file an FIR
+  steps:
+  - intent: file_fir
+  - action: utter_file_fir
+
+- story: show fir enquiry
+  steps:
+  - intent: fir_enquiry
+  - action: utter_fir_enquiry
+
+- story: show safety tips for foreigners
+  steps:
+   - intent: foreigners_safety_tip
+   - action: utter_foreigners_safety_tip
+
+- story: show telecommunication branch
+  steps:
+   - intent: telecommunication_branch
+   - action: utter_telecommunication_branch
+
